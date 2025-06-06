@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+```markdown
+# 💬 WhatsApp Quiz Bot – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-18.x-blue)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Frontend%20Bundler-yellow)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Styled%20With-TailwindCSS-0ea5e9)](https://tailwindcss.com/)
 
-## Available Scripts
+> React-based frontend for WhatsApp Quiz Bot — shows real-time user flow, step analytics, and simulates the WhatsApp-style experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+````
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+frontend/
+├── public/                  # Static assets
+├── src/
+│   ├── components/          # React components (QuizPreview, Layouts, etc.)
+│   ├── pages/               # Simulate and Analytics views
+│   ├── App.js              # Route configuration
+│   ├── index.js            # Main entry
+│   └── index.css            # Tailwind CSS
+├── .env                     # port etc.
+├── tailwind.config.js
+````
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Setup Instructions
 
-### `npm run build`
+### 1. Clone the repo & install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/mishravibhav/whatsapp-quiz-bot-frontend.git
+cd whatsapp-quiz-bot-frontend
+npm install
+````
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Configure environment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a `.env` file:
 
-### `npm run eject`
+```
+PORT=5000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Start dev server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Frontend will be accessible at `http://localhost:5000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧪 Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 🟢 WhatsApp-style quiz simulation
+* 📊 Per-question user analytics
+* 📡 Real-time updates using socket.io
+* 📁 see real time aggrigated report
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Deployment (Vercel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Import this repo into [Vercel](https://vercel.com)
+2. Set build command: `npm run build`
+3. Output directory: `dist`
+4. Add environment variable:
 
-### Analyzing the Bundle Size
+   ```
+   PORT=5000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🖼️ Preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Quiz Preview UI](https://via.placeholder.com/700x400?text=Quiz+UI+Preview)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
+MIT © [Vibhav Mishra](https://github.com/mishravibhav)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
